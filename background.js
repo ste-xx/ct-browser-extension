@@ -1,6 +1,6 @@
 chrome.action.onClicked.addListener((tab) => {
-  chrome.scripting.executeScript({
+  chrome.scripting.insertCSS({
     target: {tabId: tab.id},
-    files: ['content.js']
+    files: ['ct.css']
   });
 });
